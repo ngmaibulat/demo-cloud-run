@@ -1,0 +1,17 @@
+events {}
+
+http {
+
+    server {
+        listen ${PORT};
+        server_name example.com;
+
+        root /usr/share/nginx/html;
+
+        location / {
+            try_files $uri $uri/ =404;
+        }
+    }
+
+
+}
