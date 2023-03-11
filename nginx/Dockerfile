@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-COPY nginx.conf.template /etc/nginx/nginx.conf.template
+COPY nginx.conf.template /etc/nginx/nginx.conf
 COPY public /usr/share/nginx/html
 
 VOLUME /usr/share/nginx/html

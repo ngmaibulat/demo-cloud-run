@@ -3,7 +3,7 @@ events {}
 http {
 
     server {
-        listen ${PORT};
+        listen 8080;
         server_name example.com;
 
         root /usr/share/nginx/html;
